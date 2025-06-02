@@ -10,7 +10,7 @@ public class Main {
 
         // Ler dados do arquivo
         try {
-            BufferedReader br = new BufferedReader(new FileReader("projetoarvoreabb/dados.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("src/projetoarvoreabb/dados.txt"));
             String linha;
             while ((linha = br.readLine()) != null) {
                 String[] partes = linha.split(",");
@@ -26,7 +26,7 @@ public class Main {
         int opcao;
         do {
             System.out.println("\n---------------------------------");
-            System.out.println("TRABALHO - ÁRVORE DE BUSCA BINÁRIA");
+            System.out.println("ALUNO: SEU NOME AQUI");
             System.out.println("DISCIPLINA: ESTRUTURA DE DADOS I");
             System.out.println("PROFESSOR: WALACE BONFIM");
             System.out.println("---------------------------------");
@@ -114,5 +114,7 @@ public class Main {
         } while (opcao != 0);
 
         sc.close();
+        System.out.println("Árvore carregada a partir do arquivo:");
+        arvore.exibirGraficamente(arvore.raiz, 0);
     }
 }

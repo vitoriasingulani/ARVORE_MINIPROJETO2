@@ -65,8 +65,6 @@ public class ArvoreABB {
             posOrdem(raiz.direita);
             System.out.println(raiz.dado);
 
-
-
         }
     }
 
